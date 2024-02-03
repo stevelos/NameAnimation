@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steve Lawrence</title>
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+      body{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #333;
+        background-image: 'img/pexels-sabrina-gelbart-249798.jpg';
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+      }
+      .text-effect{
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 4rem;
+        border-right: 2px solid white;
+        padding-right: 5px;
+        animation: typing 4s steps(40) infinite, blink 1s step-end infinite;
+      }
+
+      @keyframes typing{
+        0%{
+          width: 0;
+        }
+        100%{
+          width: 100%;
+        }
+      }
+
+      @keyframes blink{
+        50%{
+          border-color: transparent;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- <img src="img/pexels-sabrina-gelbart-249798.jpg" alt="computer code"> -->
+    <div class="container">
+      <h1 class="text-effect">Steve Lawrence</h1>
+    </div>
+  </body>
+</html>
